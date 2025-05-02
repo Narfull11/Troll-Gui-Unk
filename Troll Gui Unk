@@ -1,0 +1,121 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Troll Tools Script👁️‍🗨️",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Example Hub",
+   LoadingSubtitle = "By UnknownTEAM",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Troll Tool"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Password For Trolling Kids🆔",
+      Subtitle =  "You won't get the password🔰",
+      Note = "You won't find the password.", -- Use this to tell the user how to get a key
+      FileName = "examplehubkey", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://pastebin.com/raw/N2NEPJqp"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Defaultult Functions💡", nil) -- Title, Image
+local Section = MainTab:CreateSection("Default💡")
+
+local Button = MainTab:CreateButton({
+Name = "Fly Gui V3",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Ragdoll Engine Troll👑",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Peeenelope/RagdollEngineShit/refs/heads/main/CoolGui.lua'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "System Broken⚜️",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Legit MVSD",
+   Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurdervssheriff"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Rage MVSD",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code"))() 
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "STK AND MORE",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/stuffman0001/CanHub/main/Code"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Prison LIFE RAGE",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/MainLoader.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "RIVALS CONTERBLOX ARSENAL",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/main.lua')))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Muscle Legends",
+   Callback = function()
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/Ceedif/Nw_Hub/refs/heads/main/Nw_Script'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "BrookHaven Troll Kids",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/09276HDUv/RaelHub/refs/heads/main/Protected_4115899840467357.lua.txt"))()
+   end,
+})
+
+local LowTab = Window:CreateTab("Visual", nil) -- Title, Image
+local Section = LowTab:CreateSection("Visual")
+
+local NewTab = Window:CreateTab("Unknown Scripts", nil) -- Title, Image
+local Section = NewTab:CreateSection("Unknown")
+
+local Button = NewTab:CreateButton({
+   Name = "Trade SCAM",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Narfull11/Trade-Scam/refs/heads/main/Trade%20Scam"))()
+   end,
+})
